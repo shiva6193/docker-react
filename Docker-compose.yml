@@ -21,8 +21,8 @@ services:
       dockerfile: Dockerfile.dev
 
     volumes: 
-      - /app/code/node_modules
-      - .:/app/code
+      - /app/node_modules
+      - .:/app
     command: ["npm", "run", "test"]
      
       

@@ -1,6 +1,6 @@
 FROM node:alpine as builder
 
-WORKDIR '/app/code'
+WORKDIR '/app'
 
 COPY package.json .
 RUN npm install
@@ -9,4 +9,4 @@ RUN npm build
 
 
 FROM nginx
-COPY --from=builder /app/code/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
