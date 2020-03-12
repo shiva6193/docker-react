@@ -8,4 +8,4 @@ before_install:
 
 script:
 
-  - docker run shiva6193/docker-react npm run test -- -- coverage
+  - docker run shiva6193/docker-react npm run test -- --coverage
