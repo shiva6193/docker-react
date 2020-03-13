@@ -4,7 +4,7 @@ services:
 
 before_install:
 
-  - docker build -t shiva6193/docker-react -f Dockerfile .
+  - docker build -t shiva6193/docker.
 
 script:
 
